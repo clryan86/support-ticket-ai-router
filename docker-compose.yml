@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    volumes:
+      - router_artifacts:/app/artifacts
+      - router_data:/app/data
+volumes:
+  router_artifacts:
+  router_data:
